@@ -60,8 +60,8 @@ export default function MapContainer({ onSelectCounty }: MapContainerProps) {
                         />
                         {/* Label */}
                         <text
-                            x={county.lng}
-                            y={county.lat - 10}
+                            x={county.cx ?? 0}
+                            y={(county.cy ?? 0) - 10}
                             textAnchor="middle"
                             className={clsx(
                                 "text-[10px] font-mono fill-white pointer-events-none",
