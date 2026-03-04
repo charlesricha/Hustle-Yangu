@@ -3,6 +3,9 @@ export interface County {
     name: string;
     lat: number;
     lng: number;
+    path?: string;
+    cx?: number;
+    cy?: number;
 }
 
 export const counties: County[] = [
